@@ -1,6 +1,6 @@
 from my_secrets import Secrets
 import chainlit as cl
-from litellm import acompletion  # ✅ Use async version
+from litellm import acompletion
 import json
 
 secrets = Secrets()
@@ -25,7 +25,6 @@ async def main(message: cl.Message):
     current_response_content = ""
 
     try:
-        # ✅ Await acompletion to get async generator
         response_stream = await acompletion(
             model=secrets.openrouter_gemini_model,
             api_key=secrets.openrouter_api_key,
@@ -33,7 +32,6 @@ async def main(message: cl.Message):
             stream=True,
         )
 
-        # ✅ This is now an async generator
         async for chunk in response_stream:
             if (
                 chunk.choices
