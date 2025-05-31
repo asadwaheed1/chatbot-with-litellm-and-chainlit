@@ -1,5 +1,5 @@
 
-### LiteLLM with Chainlit Agent Assignment PIAIC 255779
+### OpenRouter and LiteLLM Streaming with Chainlit Agent Assignment PIAIC 255779
 
 **Assalamualikum! To run the project you must have python installed and uv installed.**
 
@@ -13,4 +13,4 @@
 
 
 ## Screenshots
-![App Screenshot](https://github.com/user-attachments/assets/5409a2f2-7aba-4b28-a8f1-4310587b5b4b)
+![App Screenshot](https://github.com/user-attachments/assets/aab36b2b-b540-4a78-adef-dcbab11a555d)
